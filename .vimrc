@@ -1,0 +1,9 @@
+:set nocp
+:set nocompatible
+:set nu
+:set colorcolumn=80
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+:set backspace=2
+:syntax on
