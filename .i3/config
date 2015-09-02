@@ -43,10 +43,14 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
+bindsym $mod+u focus left
+bindsum $mod+i focus down
+bindsym $mod+o focus up
+bindsym $mod+p focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -55,10 +59,14 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+u move left
+bindsym $mod+Shift+i move down
+bindsym $mod+Shift+o move up
+bindsym $mod+Shift+p move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -150,13 +158,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # screen brightness
-bindsym $mod+F6 exec xbacklight -inc 10
-bindsym $mod+F5 exec xbacklight -dec 10
+bindsym $mod+F6 exec xbacklight -inc 5
+bindsym $mod+F5 exec xbacklight -dec 5
 
 # volume
 bindsym $mod+F11 exec amixer -c1 sset Master 5%-
 bindsym $mod+F12 exec amixer -c1 sset Master 5%+
 bindsym $mod+F10 exec amixer -c1 sset Master toggle
+
+# lock screen
+bindsym $mod+l exec i3lock
 
 # focus follows mouse
 focus_follows_mouse no
