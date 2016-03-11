@@ -1,0 +1,20 @@
+! Commented lines start with '!'
+
+! Import colorscheme first
+!#include ".Xresources.d/themes/"
+
+!#include ".Xresources.d/themes/cmyk"
+!#include ".Xresources.d/themes/sky"
+#include ".Xresources.d/themes/sunsetcity"
+!#include ".Xresources.d/themes/darksolarized"
+
+! Some font rendering fixings
+Xft.dpi:        96
+Xft.rgba:       rgb
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! Import term and rofi configs last
+#include ".Xresources.d/urxvt"
+#include ".Xresources.d/rofi"
